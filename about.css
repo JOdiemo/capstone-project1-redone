@@ -1,41 +1,10 @@
-.main {
-  background-image: url("Images/h-back.jpg");
-  background-attachment: local;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .overlay {
   background: rgba(255, 255, 255, 0.8);
   background-size: cover;
-  overflow: hidden;
   height: 100%;
 }
 
-#intro {
-  text-align: center;
-}
-
-.main-title {
-  text-align: center;
-}
-
-.intro-message {
-  width: 100%;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.7);
-}
-
-.intro-message p {
-  font-size: 1vw;
-}
-
-.intro-message2 {
-  width: 100%;
-  text-align: center;
-}
-
-#second {
+#mission {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +13,7 @@
   padding: 60px 16%;
 }
 
-#second h2 {
+#mission h2 {
   font-weight: 700;
   line-height: 1.1;
   font-size: 2vw;
@@ -55,24 +24,25 @@
 .logo2 {
   width: 40%;
   margin: 4% 30%;
-  height: 160px;
+  height: 140px;
   background-image: url("Images/churchlogo.jpg");
   background-size: contain;
   background-repeat: no-repeat;
+  border-color: #272a3157;
 }
 
-#third {
+#past {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   flex-direction: column;
+  border-top: 1px solid gray;
   padding: 60px 16%;
-  background-image: url("Images/h-back.jpg");
   background-size: cover;
 }
 
-#third h2 {
+#past h2 {
   font-weight: 700;
   line-height: 1.1;
   font-size: 2vw;
@@ -116,9 +86,11 @@ footer {
 }
 
 .copyright {
-  display: block;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
-  align-content: center;
+  padding-left: 500px;
 }
 
 .copyright p {
@@ -130,16 +102,15 @@ footer {
     font-size: 3vw;
   }
 
-  #second {
+  #mission {
     display: flex;
     justify-content: center;
-    align-items: center;
     align-content: center;
     flex-direction: column;
     padding: 30px 3%;
   }
 
-  #second h2 {
+  #mission h2 {
     font-weight: 700;
     line-height: 1.1;
     font-size: 4vw;
@@ -150,22 +121,18 @@ footer {
     margin: 4% 30%;
     height: 160px;
     background-image: url("Images/churchlogo.jpg");
-    background-size: contain;
     background-repeat: no-repeat;
   }
 
-  #third {
+  #past {
     display: flex;
     justify-content: center;
-    align-items: center;
-    align-content: center;
+    border-top: 1px solid gray;
     flex-direction: column;
     padding: 40px 3%;
-    background-image: url("Images/conference.jpg");
-    background-size: cover;
   }
 
-  #third h2 {
+  #past h2 {
     font-weight: 700;
     line-height: 1.1;
     font-size: 4vw;
@@ -187,5 +154,12 @@ footer {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 20px;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 5px;
   }
 }

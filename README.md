@@ -12,8 +12,8 @@
 
 ## Project link
 
-[Project Link](https://github.com/JOdiemo/capstone-project/)
-[Live Link](https://jodiemo.github.io/capstone-project/)
+[Project Link](https://github.com/JOdiemo/capstone-project1-redone/)
+[Live Link](https://github.com/JOdiemo/capstone-project1-redone/)
 intro video: https://drive.google.com/file/d/1mQ5cAfhPq8MFaBQ0n26e8F1Jxchpr7mc/view?usp=sharing
 
 
@@ -26,7 +26,7 @@ To get a local copy, just follow the steps That I am going to mention bellow:
 ### Setup
 To get this project in your local machine, follow these steps:
 - Open terminal
-- clone the repository : https://github.com/JOdiemo/capstone-project/
+- clone the repository : https://github.com/JOdiemo/capstone-project1-redone/
 - Cd in the project folder
 - run the project in your browser
 
@@ -52,7 +52,7 @@ Please note that for this project it was supposed to be a par coding collaborati
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/JOdiemo/capstone-project1-redone/issues/).
 
 ## Show your support
 

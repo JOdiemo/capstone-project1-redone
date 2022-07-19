@@ -33,6 +33,15 @@ header {
   color: #fff;
 }
 
+.main {
+  height: fit-content;
+  width: 100%;
+  background-image: url("Images/conference.jpg");
+  background-attachment: local;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .partner1 img {
   width: 200px;
   height: 180px;
@@ -101,17 +110,9 @@ header {
   color: #272a31;
 }
 
-.main {
-  height: fit-content;
-  width: 100%;
-  background-image: url("Images/conference.jpg");
-  background-attachment: local;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .main-title {
   font-family: "COCOGOOSE", sans-serif;
+  text-align: center;
 }
 
 .overlay {
@@ -174,22 +175,45 @@ h6 {
   padding: 12px;
 }
 
-.intro-message p {
-  font-size: 2vw;
+.about-title {
+  font-family: "COCOGOOSE", sans-serif;
+  text-align: center;
+  width: 80%;
+  padding-left: 200px;
 }
 
-.intro-message2 h2 {
+.about-message2 h2 {
   font-family: inherit;
   font-weight: 1000;
   line-height: 1.1;
   font-size: 2vw;
 }
 
-.intro-message2 h3 {
+.about-message2 h3 {
   font-family: inherit;
   font-weight: 400;
   line-height: 1.1;
   font-size: 1.5vw;
+}
+
+#about {
+  text-align: center;
+}
+
+.about-message {
+  width: 80%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 50px auto;
+}
+
+.about-message p {
+  font-size: 1.5vw;
+}
+
+.about-message2 {
+  width: 100%;
+  text-align: center;
 }
 
 .program {
@@ -285,13 +309,13 @@ h6 {
   margin: 0 auto 30px;
 }
 
-.guide_bar2 {
+.bar2 {
   border-top: 2px solid #d3d3d3;
   width: 10%;
   margin-bottom: 5%;
 }
 
-.speaker-main {
+.conf-speakers {
   display: flex;
   width: 100%;
   height: 10%;
@@ -300,7 +324,7 @@ h6 {
   gap: 3%;
 }
 
-.speaker-image {
+.sp-photo {
   width: 200px;
   height: 200px;
   margin: 15px 0 0 15px;
@@ -314,24 +338,25 @@ h6 {
   width: 80%;
 }
 
-.speaker-right {
+.right-side {
   padding: 0% 3%;
 }
 
-.speaker-right p {
+.right-side p {
   font-size: 1.1vw;
 }
 
-.speaker-right h3 {
+.right-side h3 {
   font-weight: 600;
   line-height: 1.2;
   font-size: 1.5vw;
   margin-bottom: -0.2px;
 }
 
-.speaker-right p i {
+.title {
   color: #eb6758;
   margin-bottom: 2px;
+  font-style: italic;
 }
 
 .partner {
@@ -433,7 +458,7 @@ footer {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.5s ease-in-out 0.1s;
-    background-color: #ec5242;
+    background-color: #000;
     cursor: pointer;
   }
 
@@ -448,11 +473,11 @@ footer {
   }
 
   .navigation.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(7px) rotate(45deg);
   }
 
   .navigation.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
   }
 
   .intro {
@@ -467,19 +492,23 @@ footer {
     font-size: 5vw;
   }
 
-  .h1,
   .h2,
   .h3,
   .h4,
   .h5,
   .h6,
-  h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
     font-size: 8vw;
+  }
+
+  .about-title {
+    font-family: "COCOGOOSE", sans-serif;
+    width: 100%;
+    padding-left: 20px;
   }
 
   .intro-message2 h2 {
@@ -659,7 +688,6 @@ footer {
     width: 100%;
     height: 100%;
     transition: all 0.5s ease-in-out;
-    background: #ec534242;
     backdrop-filter: blur(5px);
   }
 
@@ -687,27 +715,12 @@ footer {
     display: flex;
     height: fit-content;
     width: 25%;
-    border: #ec534250;
-    border-style: solid;
     border-width: 2px;
-    border-radius: 24px;
     margin-top: 18px;
     margin-left: 67%;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
-    line-height: 1.1;
-    font-size: 3vw;
-    color: #272a31;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
     padding: 12px 2px;
-  }
-
-  .login:hover {
-    background: rgb(239, 81, 60);
-    color: #fff;
-    transform: scale(1.01, 1);
   }
 
   .menu-link {
@@ -716,6 +729,7 @@ footer {
     line-height: 1.1;
     font-size: 6vw;
     color: #272a31;
+    padding-left: 100px;
   }
 
   .logo2 {

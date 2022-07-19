@@ -1,56 +1,48 @@
-const speakerArray = [
-  {
-    image: 'Images/photo1.jpg',
-    name: 'Rachel Edwards',
-    title: 'Senior Pastor',
-    description: 'A determined and enrgetic evangelist with nothing to loose in spreadinng the word. Great experience in evangelism',
-  },
-  {
-    image: 'Images/photo2.jpg',
-    name: 'Rev. Tom Bwickel',
-    title: 'Chief of Missons',
-    description: 'Hsving transversed the world in various capacity, Tom can move mountains when it comes to teaching the bible. Worth listening to him .',
-  },
-  {
-    image: 'Images/photo3.jpg',
-    name: 'Pst Grace Roth',
-    title: 'Youth Pastor',
-    description: 'Experienced with the younger generation. Undestands the millenials more than he undestands himself. Surely the youth are blessed to have such a pastor.',
-  },
-  {
-    image: 'Images/photo4.jpg',
-    name: 'Grace Geralds',
-    title: 'People Coach',
-    description: 'Has had a good laugh when it comes to matters of the family. Nothing can go away without it being resolved. The imposible is a mindset.',
-  },
-  {
-    image: 'Images/photo5.jpg',
-    name: 'James Carter',
-    title: 'Bishop Emeritus',
-    description: 'Having served as a biship for over 15 years it was time to cool off in the mountais. Not for me, I believe we have the Lord to thank so spread the word. ',
-  },
-  {
-    image: 'Images/photo6.jpg',
-    name: 'Greg Labron',
-    title: 'Artist',
-    description: 'Uses music as a media of spreading the word. Winner of 5 grammy awards and nothing is on the way with Gods help. ',
-  },
-];
+import speakerArray from './data.js';
 
-const cardss = document.querySelector('.speaker-container');
-speakerArray.forEach((c) => {
-  const card = document.createElement('article');
-  card.innerHTML = (`
-  <div class="speaker-main">
-      <img class = "speaker-image" src="${c.image}" alt=" Image ">
-      <div class="speaker-right">
-          <h3> ${c.name}</h2>
-          <p><i>${c.title}</i></p>
-          <div class="guide_bar2"></div>
-          <div class="speaker-divider-menu"></div>
-          <p class="description">${c.description}</p>
-      </div>
-</div>
-  `);
-  cardss.appendChild(card);
+function setAttributes(el, attrs) {
+  for (const key of attrs) {
+    el.setAttribute(key, attrs[key]);
+  }
+}
+
+const speakerCard = (spkCard) => {
+// First create elements
+
+  const div1 = document.createElement('div');
+  const img1 = document.createElement('img');
+  const div2 = document.createElement('div');
+  const h31 = document.createElement('h3');
+  const p1 = document.createElement('p');
+  const div3 = document.createElement('div');
+  const div4 = document.createElement('div');
+  const p2 = document.createElement('p');
+  const cards = document.querySelector('.speaker-container');
+
+  // append as per requirement into body
+  const card1 = document.createElement('article');
+  cards.append(card1);
+  card1.append(div1);
+  div1.append(img1);
+  div1.append(div2);
+  div2.append(h31);
+  div2.append(p1);
+  div2.append(div3);
+  div2.append(div4);
+  div2.append(p2);
+
+  // populate the card
+  div1.setAttribute('class', 'conf-speakers');
+  div2.setAttribute('class', 'right-side');
+  div3.setAttribute('class', 'bar2');
+  div4.setAttribute('class', 'divider');
+  p1.setAttribute('class', 'title');
+  h31.innerHTML = spkCard.name;
+  setAttributes(img1, { src: spkCard.image, class: 'sp-photo', alt: 'Speaker Photo' });
+  p2.innerHTML = spkCard.description;
+  p1.innerHTML = spkCard.title;
+};
+
+speakerArray.forEach((element) => {
+  speakerCard(element);
 });
